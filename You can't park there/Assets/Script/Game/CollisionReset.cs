@@ -24,7 +24,8 @@ public class CollisionReset : MonoBehaviour
         {
             hasCollided = true;
             Debug.Log("💥 Collision détectée avec la voiture !");
-            StartCoroutine(RestartSceneAfterDelay());
+            // StartCoroutine(RestartSceneAfterDelay());
+            GameManager.Instance.LoseGame();
         }
     }
 

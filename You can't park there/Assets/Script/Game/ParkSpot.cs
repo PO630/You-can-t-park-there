@@ -45,6 +45,7 @@ public class ParkSpot : MonoBehaviour
             {
                 Debug.Log("🏆 Gagné ! La voiture est bien garée !");
                 enabled = false; // désactive le script pour éviter de rejouer la victoire
+                GameManager.Instance.WinGame();
             }
         }
         else
